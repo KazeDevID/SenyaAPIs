@@ -29,5 +29,5 @@ Untuk melanjutkan Rest APIs ini
 
 Yang minat langsung saja 👇
 
-[Kaze](https://wa.me/6282217590187
+[Kaze](https://wa.me/6282217590187)
 
