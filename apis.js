@@ -76,7 +76,7 @@ function getRandom(nans) {
    })
   router.get('/canvas/*', async (req, res) => {
   var cdapikey = req.query.apikey;
-   let { url, texto } = req.query
+   let { url, text } = req.query
    try {
    if(!cdapikey) return res.json(resposta.semkey)
   	if(cdapikey !== key) return res.sendFile(keyinvalida)
@@ -89,15 +89,15 @@ function getRandom(nans) {
  break
  case '/changemymind':
  case '/changemymind/':
-  if (!texto) return res.status(408).send(resposta.cdimg)
+  if (!text) return res.status(408).send(resposta.cdimg)
   res.type('jpg')
-  res.send(await canvacord.changemymind(texto))
+  res.send(await canvacord.changemymind(text))
   break
  case '/clyde':
  case '/clyde/':
-  if (!texto) return res.status(408).send(resposta.cdimg)
+  if (!text) return res.status(408).send(resposta.cdimg)
   res.type('jpg')
-  res.send(await canvacord.clyde(texto))
+  res.send(await canvacord.clyde(text))
   break
  default: 
  res.status(404).json({
