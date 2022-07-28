@@ -21,28 +21,28 @@ resposta = { //Kesalahan message pada server
     semkey: {
         status: false,
         creator: `${creator}`,
-        código: 406,
-        mensagem: 
+        kode: 406,
+        pesan: 
         'Masukkan apikey di url'
     },
     cdtxt: {
         status: false,
         creator: `${creator}`,
-        código: 406,
-        mensagem: 
+        kode: 406,
+        pesan: 
         'sisipkan teks di url'
     },
     cdimg: {
         status: false,
         creator: `${creator}`,
-        código: 406,
-        mensagem: 
+        kode: 406,
+        pesan: 
         'Sisipkan gambar di url'
     },
     error: {
        status: false,
         creator: `${creator}`,
-        mensagem: 
+        pesan: 
         'ops :/ada kesalahan pada server internal'
     }
 }
@@ -132,13 +132,13 @@ if(!cdapikey) return res.json(resposta.semkey)
  link = req.query.link          
 if(!cdapikey) return res.json(resposta.semkey)
  if(cdapikey !== key) return res.sendFile(keyinvalida)
- if (!link) return res.json({ status : false, creator : `creator`, mensagem : "Coloque o link"})
+ if (!link) return res.json({ status : false, creator : `creator`, pesan : "Coloque o link"})
  ytDonlodMp3(link).then((akk) => {
 res.json({
 status: true,
-código: 200,
+kode: 200,
 creator: `${creator}`,
-resultado: akk
+hasil: akk
 })}).catch(e => {
 res.sendFile(error)})})
 
@@ -147,13 +147,13 @@ res.sendFile(error)})})
  link = req.query.link          
 if(!cdapikey) return res.json(resposta.semkey)
  if(cdapikey !== key) return res.sendFile(keyinvalida)
- if (!link) return res.json({ status : false, creator : `creator`, mensagem : "Coloque o link"})
+ if (!link) return res.json({ status : false, creator : `creator`, pesan : "Coloque o link"})
  ytDonlodMp4(link).then((akk) => {
 res.json({
 status: true,
-código: 200,
+kode: 200,
 creator: `${creator}`,
-resultado: akk
+hasil: akk
 })}).catch(e => {
 res.sendFile(error)})})
 
@@ -162,13 +162,13 @@ res.sendFile(error)})})
  nome = req.query.nome
 if(!cdapikey) return res.json(resposta.semkey)
  if(cdapikey !== key) return res.sendFile(keyinvalida)
- if (!nome) return res.json({ status : false, creator : `creator`, mensagem : "Coloque o nome"})
+ if (!nome) return res.json({ status : false, creator : `creator`, pesan : "Coloque o nome"})
  ytPlayMp3(nome).then((akk) => {
 res.json({
 status: true,
-código: 200,
+kode: 200,
 creator: `${creator}`,
-resultado: akk
+hasil: akk
 })}).catch(e => {
 res.sendFile(error)})})
 
@@ -177,13 +177,13 @@ res.sendFile(error)})})
  nome = req.query.nome
 if(!cdapikey) return res.json(resposta.semkey)
  if(cdapikey !== key) return res.sendFile(keyinvalida)
- if (!nome) return res.json({ status : false, creator : `creator`, mensagem : "Coloque o nome"})
+ if (!nome) return res.json({ status : false, creator : `creator`, pesan : "cantumkan nama"})
  ytPlayMp4(nome).then((akk) => {
 res.json({
 status: true,
-código: 200,
+kode: 200,
 creator: `${creator}`,
-resultado: akk
+hasil: akk
 })}).catch(e => {
 res.sendFile(error)})})
 
