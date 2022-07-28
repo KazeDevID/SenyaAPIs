@@ -1,4 +1,4 @@
-console.log('Iniciando....')
+console.log('Menghubungkan....')
 var express = require('express')
 var cors = require('cors')
 var morgan = require('morgan');
