@@ -31,3 +31,8 @@ Yang minat langsung saja 👇
 
 [Kaze](https://wa.me/6282217590187)
 
+
+
+
+
+# Ingat Kaze Itu Cools🗿
