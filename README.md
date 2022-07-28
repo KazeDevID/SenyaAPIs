@@ -23,4 +23,11 @@
 Silakan di Pakai base nya asal jangan di hapus 
 Creatornya
 
-##
+## ⚠️⚠️
+Nyari Teman Collab Contributors yang sportif
+Untuk melanjutkan Rest APIs ini
+
+Yang minat langsung saja 👇
+
+[Kaze](https://wa.me/6282217590187
+
