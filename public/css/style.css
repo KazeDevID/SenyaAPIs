@@ -1,0 +1,76 @@
+/* Cores do site */
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+    --bgColor: red;
+    --accentColor: #ff0000;
+    --font: 'Karla', sans-serif;
+    --fontColor: black;
+}
+html, body {
+  width: 100%;
+  height:100%;
+}
+body {
+    background: linear-gradient(217deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000),linear-gradient(#ff03d9, #ff0000, #0307ff, #ff03d9, #ff0000), linear-gradient(#ff0000 0%, #ff03d9 25%, #ff03d9 50%, #ff0000 75%, #ff03d9 100%);/*cores do gradiente*/
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite; /*gradiange o 1s é a velocidade*/
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+h4 { 
+color: black;
+font-family: var(--font);
+}
+#userName{
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--fontColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}

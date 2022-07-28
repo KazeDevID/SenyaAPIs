@@ -1,0 +1,36 @@
+{
+  "name": "senya-apis",
+  "version": "1.1.0",
+  "description": "Nothing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazeDevID/SenyaAPIs.git"
+  },
+  "keywords": [
+    "simple",
+    "loli",
+    "rest",
+    "api"
+  ],
+  "author": "KazeDevID",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KazeDevID"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "morgan": "^1.10.0",
+    "ssl-express-www": "^3.0.7",
+    "canvacord": "^5.1.0",
+    "ytdl-core": "^4.4.5",
+    "yt-search": "^2.7.3"
+  },
+  "homepage": "https://github.com/KazeDevID/SenyaAPIs"
+}
